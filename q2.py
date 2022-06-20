@@ -1,4 +1,8 @@
 class PizzaComponent:
+    """
+    - Design Pattern Decorator -
+    Classe interface componente pizza.
+    """
 
     def getDescription(self):
         return self.__class__.__name__
@@ -8,10 +12,19 @@ class PizzaComponent:
 
 
 class Dough(PizzaComponent):
+    """
+    - Design Pattern Decorator -
+    Classe componente concreto massa de pizza.
+    """
+    
     cost = 0.5
 
 
 class Decorator(PizzaComponent):
+    """
+    - Design Pattern Decorator -
+    Classe decorador base.
+    """
     
     def __init__(self, pizzaComponent):
         self.component = pizzaComponent
@@ -24,7 +37,11 @@ class Decorator(PizzaComponent):
 
 
 class Cheese(Decorator):
-
+    """
+    - Design Pattern Decorator -
+    Classe decorador concreto queijo.
+    """
+    
     cost = 1.5
     
     def __init__(self, pizzaComponent):
@@ -32,7 +49,11 @@ class Cheese(Decorator):
 
 
 class Tomato(Decorator):
-
+    """
+    - Design Pattern Decorator -
+    Classe decorador concreto tomate.
+    """
+    
     cost = 1.0
 
     def __init__(self, pizzaComponent):
@@ -40,7 +61,11 @@ class Tomato(Decorator):
 
 
 class Onion(Decorator):
-
+    """
+    - Design Pattern Decorator -
+    Classe decorador concreto cebola.
+    """
+    
     cost = 1.0
 
     def __init__(self, pizzaComponent):
@@ -48,7 +73,11 @@ class Onion(Decorator):
 
 
 class TomatoSauce(Decorator):
-
+    """
+    - Design Pattern Decorator -
+    Classe decorador concreto molho de tomate.
+    """
+    
     cost = 1.0
 
     def __init__(self, pizzaComponent):
@@ -56,7 +85,11 @@ class TomatoSauce(Decorator):
 
 
 class Pepperoni(Decorator):
-
+    """
+    - Design Pattern Decorator -
+    Classe decorador concreto peperoni.
+    """
+    
     cost = 7.0
 
     def __init__(self, pizzaComponent):
@@ -64,7 +97,11 @@ class Pepperoni(Decorator):
 
 
 class Ham(Decorator):
-
+    """
+    - Design Pattern Decorator -
+    Classe decorador concreto presunto.
+    """
+    
     cost = 6.0
 
     def __init__(self, pizzaComponent):
