@@ -4,5 +4,5 @@
 ## 📄 Tests
 
 
-<img src="q1.png" alt="tests">
+<img src="q1.jpg" alt="tests">
 
